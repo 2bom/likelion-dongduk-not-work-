@@ -1,0 +1,154 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+/*web font*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:700');
+
+*{
+    font-family: 'Lato', "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-decoration: none !important;
+}
+
+/* container */
+.container {
+    min-width: 100%;
+    max-width: 100%;
+    padding-left:60px !important;
+    padding-right:60px !important;
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+}
+
+
+/* navbar */
+
+.nav_bar {
+    
+    overflow:hidden;
+    margin:0px;
+    margin-bottom: 0px;
+    
+    /*투명바탕 css*/
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    
+    /*display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;*/
+
+}
+.nav_bar .nav_logo {
+    padding-left: 60px;
+    
+    font-size: 25px;
+    float: left;
+    margin-bottom: 10px;
+    
+}
+.nav_bar .nav_menu {
+    padding-left: 28px;
+}
+
+.nav_bar a {
+    float: right;
+    display: block;
+    color:rgba(255,255,255,0.5);
+    text-align: center;
+    background-color: inherit !important;
+}
+
+.nav_bar .nav_black a {
+    float: right;
+    display: block;
+    color:rgba(151,33,18,0.5);
+    text-align: center;
+}
+
+.nav_bar a:link {
+    background-image: none;
+}
+
+.nav_bar li a:hover,
+.nav_bar li a:focus{
+    color:white;
+    
+}
+
+.nav_bar .nav_black li a:hover,
+.nav_bar .nav_black li a:focus{
+    color:rgba(151,33,18,1); /*동덕자주색*/
+}
+
+.nav_bar .nav .active a{
+    color:rgba(151,33,18,1);
+    font-weight:bold;
+}
+.navbar_content {
+    margin-right: 65px;
+}
+
+
+/*not main navbar*/
+.not_main {
+  padding-top: 20px;
+  margin-bottom: 25px;
+}
+.not_main .nav_content {
+  line-height:45px;
+}
+.not_main>.navbar_content>#nav_logo {
+  float:left;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* nav end */
+
+/* all css */
+h1 {
+    letter-spacing: -0.0375rem;
+    font-size: 3.3475rem;
+    line-height: 1.1;
+    font-weight: 100;
+}
+
+/* css for footer*/
+
+
+
+/* css for footer*/
+/*footer.footer {
+    background-color: #111;
+    height: 90px;
+    padding-top: 30px;
+    margin-top: 50px;
+    color: white;
+    font-size: 2rem;
+}*/
+
+footer{
+    padding: 2rem 0;
+    text-align:center;
+    color: white;
+    background-color: black;
+    margin-top: 30px;
+    /*background-color: #000;*/
+}

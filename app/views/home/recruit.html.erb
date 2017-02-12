@@ -1,0 +1,78 @@
+<link rel="stylesheet" type="text/css" href="recruit.css">
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<!-- 달력 팝업 -->
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+	$( document ).ready(function() {
+		$('.trigger').click(function(e){
+			e.preventDefault();
+			$('#popup_layer, #overlay_t').show();
+    $('#popup_layer').css("position","absolute");
+    $('#popup_layer').css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 4) + $(window).scrollTop()) + "px");
+    $('#popup_layer').css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+			
+			// $('#popup_layer').css("top", Math.max(0, $(window).scrollTop() + 100) + "px");
+  // $('#event_layer').css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 4) + $(window).scrollTop()) + "px");
+		});
+		$('#overlay_t, .close').click(function(e){
+			e.preventDefault();
+			$('#popup_layer, #overlay_t').hide();
+		});
+	});
+</script>
+
+	<nav class="nav_bar not_main">
+    	<div class="navbar_content">
+	      	<a href="/home/main" class="nav_logo" id="nav_logo">
+	        <!-- LIKE LION -->
+	            <img src='../assets/logo_j.png' alt="dongduklikon" style='width:12.5rem;'/></a>
+	      	<ul class="nav nav_black">
+		        <li>
+		          <a class="nav_menu" href="/home/member">MEMBER</a>
+		        </li>
+		        <li>
+		          <a class="nav_menu" href="/home/faq">FAQ</a>
+		        </li>
+		        <li>
+		          <a class="nav_menu" href="/home/recruit">RECRUIT</a>
+		        </li>
+		        <li>
+		          <a class="nav_menu" href="/home/main#about">ABOUT</a>
+		        </li>
+	      	</ul> 
+    	</div>
+    </nav>
+    
+<div class="container">
+    <h2>RECRUIT</h2>
+    <hr>
+</div>
+<header id="recruit-poster">
+	<!--달력 팝업-->
+	<div id="popup_layer"><a class="close">닫기</a></div>
+	<div id="overlay_t"></div>
+    <div class="container">
+    	<div class="header-right">
+        	<div class="recruit-content">
+            	<ul class="mylist">
+                	<li><i class="fa fa-calendar-minus-o" aria-hidden="true"></i>서류접수 : 2/25(토) ~ 3/10(금)</li>
+                	<li><i class="fa fa-calendar-minus-o" aria-hidden="true"></i>서류심사 및 면접 : 3/11(토) ~ 3/14(화)</li>
+                	<li><i class="fa fa-calendar-minus-o" aria-hidden="true"></i>최종발표 : 3/15(수)</li>
+                	<li><i class="fa fa-calendar-minus-o" aria-hidden="true"></i>오리엔테이션 : 3/18(토)</li>
+            	</ul>
+	        	<button class="trigger" title="일정보기"><span>일정보기</span></button>
+	        	<button title="지원하기" onclick="window.open('http://jasoseol.com/')";><span>지원하기</span></button>
+	    </div>
+    	</div>
+    </div>
+</header>
+<div class="container">
+	<div class="recruit-info">
+		<hr>
+		<h3>멋쟁이 사자처럼 동덕여자대학교에서 5기를 모집합니다!</h3>
+		<img class="content-second-poster" src="../assets/recruit/4th.jpg" alt="poster">
+		<p class="recruit-content-text">얄리얄랴랴야야랴ㅑ라ㅣ너호호호호호ㅗ호호호호호여러뭊 멋사로ㅎ오세요</p>
+		<button class="trigger" title="일정보기"><span>일정보기</span></button>
+		<button title="지원하기" onclick="window.open('http://jasoseol.com/')";><span>지원하기</span></button>
+	</div>
+</div>

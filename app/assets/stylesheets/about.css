@@ -1,0 +1,160 @@
+/*web font*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:700');
+/*dongduk main logo*/
+/*.dongduk-logo {
+    text-indent:-9999px;
+}*/
+
+
+
+
+/* main background-image*/
+#header-img {
+    background-image: url('main.jpg');
+    background-size: cover;
+    height:100vh;
+    background-repeat:no-repeat;
+    color:white;
+    padding-top:20px;
+    /*1000px이나을까요 600px이 나을까요*/
+   
+}
+#header-img .header-font-title{
+    padding-top: 4.0rem;
+    padding-left:5.0rem;
+    opacity: 0.8;
+    font-size:100px;
+    text-align:left;
+    
+    letter-spacing:-0.9rem;
+    /*
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    그라데이션
+    */
+    
+    color: #eee; 
+    
+}
+#header-img .header-atdongduk {
+    padding-left:575px;
+    text-align: left;
+    font-size:5rem;
+}
+#header-img .header-font-subtitle{
+    padding-left: 39rem;
+    font-family:'PT Sans';
+    opacity: 0.7;
+}
+#header-img .header-font-script {
+    display:flex;
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 140%;
+    justify-content:center;
+    margin-left:100px;
+    margin-right:100px;
+}
+
+#header-img .header-font-endtitle {
+    text-align: right;
+    margin-top: 20rem;
+    margin-right: 6.5rem;
+}
+
+#header-img .header-font-endscript {
+    text-align: right;
+    margin-right: 6.5rem;
+    line-height: 1.62rem;
+    letter-spacing: -0.01rem;
+    font-size:1.07rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/*ABOUT*/
+#about {
+    margin:0px; 
+    box-sizing:border-box;
+    overflow-x:hidden;
+}
+.container .about-title {
+    padding-top:3.3rem;
+    color:black;
+}
+
+/*#about .about-img-left h6 {
+    color:red;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:center;
+    padding-top:50px;
+    
+}*/
+#about .about-img-left img {
+    width:50vw;
+    height:14.95vw;
+    margin-bottom:4.5rem;
+
+}
+
+#about .about-img-left span {
+    color:black;
+    font-size:3.1rem;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:center;
+    /*padding-top:20px;*/
+    margin-bottom:20px;
+    
+}
+#about .about-img-left p {
+    color:darkgrey;
+    text-align:center;
+    font-size:1.4rem;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:center;
+    line-height:30px;
+}
+
+#about .about-img-right img{
+    width:50vw;
+    height:14.95vw;
+    margin-bottom:4.5rem;
+
+}
+
+#about .about-img-right span {
+    color:black;
+    font-size:3.1rem;
+    display:flex;
+    flex-wrap:nowrap;
+   
+    justify-content:center;
+    /*padding-top:20px;*/
+    margin-bottom:20px;
+    
+}
+#about .about-img-right p {
+    color:darkgrey;
+    text-align:center;
+    font-size:1.4rem;
+   
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:center;
+    line-height:30px;
+}
+#about .row {
+    
+    margin-left:65px !important;
+    margin-right:65px !important;
+    padding:0px !important;
+
+}
+

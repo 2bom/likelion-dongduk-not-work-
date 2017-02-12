@@ -1,0 +1,225 @@
+
+#recruit-poster {
+    position: relative;
+    height: 600px;
+    background-image: url('recruit/poster.jpg');
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    color: #f5ece5;
+}
+
+.header-right {
+    margin-left: 50%;
+    height: 600px;
+}
+
+/*#mask {  */
+/*  position: absolute;*/
+/*  top: 60%;*/
+/*  left: 50%;*/
+/*  transform: translate(-35%, -35%);*/
+/*  z-index:9000;  */
+/*  background-image: url("recruit/cal.PNG");  */
+/*  background-repeat:no-repeat;*/
+/*  display:none;  */
+/*}*/
+
+/*.window {*/
+/*    display: none;*/
+/*	position:absolute;  */
+/*	left:100px;*/
+/*	top:100px;*/
+/*	z-index:10000;*/
+/*}*/
+
+.recruit-content {
+    padding: 10% 10%;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+/*.mylist li:before {*/
+/*    display: inline-block;*/
+/*    vertical-align: middle;*/
+/*    padding: 0px 5px 6px 0px;*/
+/*}*/
+
+.mylist li i {
+    padding-right: 8px;
+}
+
+.mylist li {
+    padding: 5px 5px;
+}
+
+/*a:link {*/
+/*    color: white;*/
+/*    background-image: url('recruit/btnimg.png');*/
+/*}*/
+
+/*#openMask a {*/
+/*	font-family: Arial, Helvetica, sans-serif;*/
+/*	font-size: 14px;*/
+/*	color: #f5ece5;*/
+/*	padding: 10px 20px;*/
+/*	background: -moz-linear-gradient(*/
+/*		top,*/
+/*		#ad8b88 0%,*/
+/*		#982013 50%,*/
+/*		#982013);*/
+/*	background: -webkit-gradient(*/
+/*		linear, left top, left bottom,*/
+/*		from(#ad8b88),*/
+/*		color-stop(0.50, #982013),*/
+/*		to(#982013));*/
+/*	-moz-border-radius: 10px;*/
+/*	-webkit-border-radius: 10px;*/
+/*	border-radius: 10px;*/
+/*	border: 2px solid #f5ece5;*/
+/*	-moz-box-shadow:*/
+/*		0px 1px 3px rgba(245,236,229,1),*/
+/*		inset 0px 0px 1px rgba(245,236,229,1);*/
+/*	-webkit-box-shadow:*/
+/*		0px 1px 3px rgba(245,236,229,1),*/
+/*		inset 0px 0px 1px rgba(245,236,229,1);*/
+/*	box-shadow:*/
+/*		0px 1px 3px rgba(245,236,229,1),*/
+/*		inset 0px 0px 1px rgba(245,236,229,1);*/
+/*	text-shadow:*/
+/*		0px -1px 0px rgba(0,0,0,1),*/
+/*		0px 1px 0px rgba(255,255,255,0.2);*/
+/*}*/
+
+#overlay_t { 
+    background-color: #000;
+    bottom: 0; 
+    left: 0; 
+    opacity: 0.5; 
+    filter: alpha(opacity = 50); 
+    /* IE7 & 8 */ 
+    position: fixed; 
+    right: 0; 
+    top: 0; 
+    z-index: 99; 
+    display:none;
+}
+
+#popup_layer {
+    position: absolute;
+    top:50%; 
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 1161px;
+    height: 510px;
+    /*margin-bottom:30px; */
+    background-image: url('recruit/cal.PNG'); 
+    /*border:solid 1px #ccc; */
+    /*margin-left:-200px; */
+    box-shadow: 0px 1px 20px #333;
+    z-index:100;
+    background-repeat:no-repeat;
+    display:none;
+}
+
+.recruit-info button {
+    
+}
+
+button {
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	/*font-size: 14px;*/
+	/*color: #f5ece5;*/
+	/*padding: 10px 20px;*/
+	/*background: -moz-linear-gradient(*/
+	/*	top,*/
+	/*	#ad8b88 0%,*/
+	/*	#982013 50%,*/
+	/*	#982013);*/
+	/*background: -webkit-gradient(*/
+	/*	linear, left top, left bottom,*/
+	/*	from(#ad8b88),*/
+	/*	color-stop(0.50, #982013),*/
+	/*	to(#982013));*/
+	/*-moz-border-radius: 10px;*/
+	/*-webkit-border-radius: 10px;*/
+	/*border-radius: 10px;*/
+	/*border: 2px solid #f5ece5;*/
+	/*-moz-box-shadow:*/
+	/*	0px 1px 3px rgba(245,236,229,0.5),*/
+	/*	inset 0px 0px 1px rgba(245,236,229,1);*/
+	/*-webkit-box-shadow:*/
+	/*	0px 1px 3px rgba(245,236,229,0.5),*/
+	/*	inset 0px 0px 1px rgba(245,236,229,1);*/
+	/*box-shadow:*/
+	/*	0px 1px 3px rgba(245,236,229,0.5),*/
+	/*	inset 0px 0px 1px rgba(245,236,229,1);*/
+	/*text-shadow:*/
+	/*	0px -1px 0px rgba(0,0,0,1),*/
+	/*	0px 1px 0px rgba(255,255,255,0.2);*/
+	border-radius: 4px;
+    background-color: rgba( 244, 81, 30, 0.5);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.container h3 {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.content-second-poster {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.recruit-content-text {
+    text-align: center;
+}
+
+.recruit-info {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

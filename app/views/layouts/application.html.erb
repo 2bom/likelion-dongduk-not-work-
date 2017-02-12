@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LIKELION DONGDUK</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+  <!--favicon-->
+  <%= favicon_link_tag 'dongduk-favicon.ico' %>
+  
+  <!-- home.css -->
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://use.fontawesome.com/3c5b14a9ca.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- material icon-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+<%= yield %>
+
+
+<footer class="text-xs-center font-weight-bold hidden-md-down">
+
+  <div class="footer-box-1">
+    멋쟁이 사자처럼<font class="font-weight-thin"> - HACK YOUR LIFE</font>
+  </div>
+
+  <div class="footer-box-2">
+    <i class="fa fa-map-marker" aria-hidden="true"></i>서울특별시 강남구 테헤란로 212, 1005호
+    <i class="fa fa-envelope" aria-hidden="true"></i>master@likelion.net
+    <i class="fa fa-facebook" aria-hidden="true"></i>facebook.com/likelion.net
+  </div>
+
+  <div class="footer-box-3 font-weight-normal">
+    대표 : 강동주,  비영리법인 고유번호 : 206-82-13813   Copyright © 사단법인 멋쟁이사자처럼 All Rights Reserved
+  </div>
+
+</footer>
+
+<!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+
+</body>
+</html>

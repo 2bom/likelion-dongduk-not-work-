@@ -1,0 +1,74 @@
+<link rel="stylesheet" type="text/css" href="member.css">
+
+  <nav class="nav_bar not_main">
+    	<div class="navbar_content">
+	      	<a href="/home/main" class="nav_logo" id="nav_logo">
+	        <!-- LIKE LION -->
+	            <img src='../assets/logo_j.png' alt="dongduklikon" style='width:12.5rem;'/></a>
+	      	<ul class="nav nav_black">
+		        <li>
+		          <a class="nav_menu" href="/home/member">MEMBER</a>
+		        </li>
+		        <li>
+		          <a class="nav_menu" href="/home/faq">FAQ</a>
+		        </li>
+		        <li>
+		          <a class="nav_menu" href="/home/recruit">RECRUIT</a>
+		        </li>
+		        <li>
+		          <a class="nav_menu" href="/home/main#about">ABOUT</a>
+		        </li>
+	      	</ul> 
+    	</div>
+    </nav>
+
+
+<div class="container member-container">
+    <h2>MEMBERS</h2>
+    <hr>
+    
+    <ul class="members">
+      <div class="row"></div>
+      <li>
+        <div class="col-sm-12 col-md-4 col-md-offset-4">
+          <a class="members-image center">
+            <img src='../assets/member/박예인.jpg' align="middle"/>
+            <div class="text-content"><div>박예인</div></div>
+          </a>
+        </div>
+      </li>
+      <div class="row"></div>
+      <% 9.times do |x| %>
+        <li>
+          <div class="col-sm-12 col-md-4">
+            <a class="members-image center">
+              <% if @members[x]=="박지수" %>
+                <img src=<%= "../assets/member/#{@members[x]}.gif"%> align="middle"/>
+              <% else  %>
+                <img src=<%= "../assets/member/#{@members[x]}.jpg"%> align="middle"/>
+              <% end %>
+              <div class="text-content"><div><%= @members[x] %></div></div>
+              <div style="margin:1px;"></div>
+            </a>
+          </div>
+        </li>
+        
+      <% end %>
+      <div class="row"></div>
+      
+      <!--<div class="row" id="image-container">-->
+      <!--  <% 9.times do |x| %>-->
+      <!--  <div class="col-sm-6 col-md-4 image-box ">-->
+      <!--    <div class="example-content" id=<%= "image-#{x}" %>>-->
+      <!--      <div class="overlay"><p><%= @members[x] %></p></div>-->
+      <!--    </div>-->
+      <!--  </div>-->
+      <!--  <% end %>-->
+        
+      <!--</div>-->
+      
+      
+      
+      
+    </ul>
+</div>
